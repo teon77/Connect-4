@@ -1,0 +1,44 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+header{
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+  
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35em;
+    height: 35em;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    border: 5px solid black;
+    border-radius: 5px;
+    background: rgb(139, 117, 43);
+    color: rgb(211, 180, 139);
+    margin: auto;
+}
+
+.cell {
+    height: 5em;
+    width: 5em;
+    background-color: rgb(226, 209, 193);
+    border-radius: 50%;
+    outline: 5px;
+}
+
+.cell:hover{
+    background-color: rgba(255, 238, 0, 0.87);
+
+}
+
+.message {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 70px;
+}
